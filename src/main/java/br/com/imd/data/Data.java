@@ -50,7 +50,7 @@ public class Data {
 		
 		usuario1.setPapeis(Arrays.asList(papel1));
 		usuario2.setPapeis(Arrays.asList(papel2));
-		usuario1.setPapeis(Arrays.asList(papel3));	
+		usuario3.setPapeis(Arrays.asList(papel3));	
 
 		UsuarioRepository.addUsuario(usuario1);
 		UsuarioRepository.addUsuario(usuario2);
