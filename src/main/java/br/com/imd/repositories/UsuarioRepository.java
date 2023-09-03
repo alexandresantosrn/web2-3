@@ -12,5 +12,9 @@ public class UsuarioRepository {
 	public static List<Usuario> getUsuarios() {
 		return usuarios;
 	}
-
+	
+	public static Usuario addUsuario(Usuario u) {
+		usuarios.add(u);
+		return u;
+	}
 }
