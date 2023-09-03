@@ -2,7 +2,6 @@ package br.com.imd.data;
 
 import java.util.Arrays;
 import java.util.Date;
-import java.util.List;
 
 import br.com.imd.domain.Papel;
 import br.com.imd.domain.Usuario;
@@ -40,6 +39,10 @@ public class Data {
 		usuario1.setId(1);
 		usuario2.setId(2);
 		usuario3.setId(3);
+		
+		usuario1.setDataCadastro(new Date());
+		usuario2.setDataCadastro(new Date());
+		usuario3.setDataCadastro(new Date());			
 		
 		usuario1.setNome("Ronaldo Nazário");
 		usuario2.setNome("Romário Faria");
