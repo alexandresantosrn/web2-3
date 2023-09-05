@@ -2,12 +2,14 @@ package br.com.imd.controllers;
 
 import java.util.List;
 
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import br.com.imd.domain.Usuario;
 import br.com.imd.repositories.UsuarioRepository;
 
+@CrossOrigin
 @RestController
 public class UsuarioController {
 	
