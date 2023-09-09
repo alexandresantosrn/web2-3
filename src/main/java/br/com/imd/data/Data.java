@@ -12,6 +12,7 @@ public class Data {
 	
 	public static void carregarDados() {
 		
+		//Criando papéis
 		Papel papel1 = new Papel();
 		Papel papel2 = new Papel();
 		Papel papel3 = new Papel();
@@ -32,6 +33,7 @@ public class Data {
 		PapelRepository.addPapel(papel2);
 		PapelRepository.addPapel(papel3);				
 		
+		//Criando usuários		
 		Usuario usuario1 = new Usuario();
 		Usuario usuario2 = new Usuario();
 		Usuario usuario3 = new Usuario();
