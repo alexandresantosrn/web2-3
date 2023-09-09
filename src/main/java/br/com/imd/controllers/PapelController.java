@@ -23,8 +23,7 @@ public class PapelController {
 	}
 	
 	@PostMapping("/papeis")
-	public Papel addPapel(@RequestBody Papel papel) {
-		papel.setDescricao(papel.getDescricao());
+	public Papel addPapel(@RequestBody Papel papel) {		
 		papel.setDataCadastro(new Date());
 		papel.setId(PapelUtil.getNextId());
 		return PapelRepository.addPapel(papel);
