@@ -8,22 +8,37 @@ public class Usuario extends AbstractEntity {
 	private String nome;
 	private List<Papel> papeis;
 
+	public Usuario() {
+
+	}
+
+	public Usuario(String nome, List<Papel> papeis) {
+		super();
+		this.nome = nome;
+		this.papeis = papeis;
+	}
+
 	public String getNome() {
 		return nome;
 	}
+
 	public void setNome(String nome) {
 		this.nome = nome;
 	}
+
 	public List<Papel> getPapeis() {
 		return papeis;
 	}
+
 	public void setPapeis(List<Papel> papeis) {
 		this.papeis = papeis;
 	}
+
 	@Override
 	public int hashCode() {
 		return Objects.hash(getId(), nome, papeis);
 	}
+
 	@Override
 	public boolean equals(Object obj) {
 		if (this == obj)
@@ -33,10 +48,7 @@ public class Usuario extends AbstractEntity {
 		if (getClass() != obj.getClass())
 			return false;
 		Usuario other = (Usuario) obj;
-		return getId() == other.getId() && 
-				Objects.equals(nome, other.nome) &&
-				Objects.equals(papeis, other.papeis);
+		return getId() == other.getId() && Objects.equals(nome, other.nome) && Objects.equals(papeis, other.papeis);
 	}
-	
-	
+
 }
